@@ -47,6 +47,11 @@ public class EmPubLiteActivity extends Activity {
                 startActivity(i);
 
                 return true;
+
+            case R.id.update:
+                startService(new Intent(this, DownloadCheckService.class));
+
+                return true;
             case R.id.about:
                 i = new Intent(this, SimpleContentActivity.class)
                         .putExtra(SimpleContentActivity.EXTRA_FILE,

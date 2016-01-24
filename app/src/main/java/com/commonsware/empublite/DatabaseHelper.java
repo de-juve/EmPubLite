@@ -1,5 +1,6 @@
 package com.commonsware.empublite;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
